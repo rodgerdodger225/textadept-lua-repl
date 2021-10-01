@@ -39,6 +39,11 @@ Cycle backward through command history, taking into account commands with multip
 Evaluates as Lua code the current line or the text on the currently selected lines.
 If the current line has a syntax error, it is ignored and treated as a line continuation.
 
+<a id="lua_repl.open_repl"></a>
+### `lua_repl.open_repl`(`make_new`)
+
+Opens or focuses a REPL buffer.  By default, it will focus the first REPL buffer that exists, and create a new one otherwise.  Set `make_new` to true to create and focus a new buffer on every call, or set it to `false` to only focus an existing buffer if it exists, and never create one.
+
 
 ## Tables defined by `lua_repl`
 
